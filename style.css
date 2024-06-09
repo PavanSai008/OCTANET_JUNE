@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.navbar{
+    height: 70px;
+    background-color: rgb(4, 20, 60);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    background-image: url("imgs/logo.png");
+    background-size: cover;
+    height: 70px;
+    width: 172px;
+    margin-left: 20px;
+}
+.search {
+    display: inline-block;
+    position: relative;
+}
+  
+.search input[type="text"] {
+    width: 400px;
+    padding: 13px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.search button[type="submit"] {
+    background-color: #4e99e9;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(186, 185, 185, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+    margin-right: 0%;
+}
+  
+button {
+    --primary-color: #4e99e9;
+    --secondary-color: #002152;
+    --hover-color: #eceff2;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+  
+button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+  
+button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+  
+button:hover {
+    background-color: var(--hover-color);
+}
+  
+button:hover .arrow {
+    background: var(--secondary-color);
+}
+  
+button:hover .arrow:before {
+    right: 0;
+}
+  
+.hero-section {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero-section h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-image: url(imgs/collage.jpg) ;
+    block-size: 300px;
+    background-size: cover;
+    margin: 0%;
+    border-radius: 10px;
+}
+
+
+.content {
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits, .social-proof, .call-to-action {
+    margin-bottom: 40px;
+}
+
+.benefits h2, .social-proof h2, .call-to-action h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap ;
+}
+.images img{
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+#images-v{
+    width: auto;
+    height: 280px;
+}
+
+.social-proof blockquote {
+    font-size: 1.1em;
+    font-style: italic;
+    margin: 0;
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.social-proof footer {
+    font-size: 0.9em;
+    font-style: normal;
+    text-align: right;
+    margin-top: 10px;
+    display: flex;
+}
+
+
+.button {
+    height: 50px;
+    width: 50%;
+    border-color: #4e99e9;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+  
+
+  
+.type1::after {
+    content: "Get Started";
+    height: 50px;
+    width: 100%;
+    background-color: rgb(4, 20, 60);
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+  
+.type1::before {
+    content: "Start your free trial today!";
+    height: 50px;
+    width: 100%;
+    border-width: 5px;
+    background-color: #4e99e9;
+    color: rgb(4, 20, 60);
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+  
+.type1:hover::after {
+    transform: translateY(0) scale(1.2);
+}
+  
+.type1:hover::before {
+    transform: translateY(-50px) scale(0) ;
+}
+h3{
+    text-align: center;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn {
+    background: #0E76A8;
+    border-radius: 20px;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #084461;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 4px;
+
+}
+  .btn:link, .btn:visited {
+    color: #fff;
+}
+.btn:active, .btn:hover {
+    background: #084461;
+    color: #fff;
+}
